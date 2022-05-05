@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="imagem/png" href="img/icones/icone_home.png"/>
+    <link rel="stylesheet" href="css/graficos.css">
+    <title>ENEM - Página Inicial</title>
+</head>
+<body>
+    <nav class="navegacao" id="nav">
+        <button aria-label="Abrir Menu" id="btn-mobile" aria-haspopup="true" aria-controls="menu" aria-expanded="false"><strong>Menu</strong>
+            <span id="hamburguer"></span>
+        </button>
+        <a href="https://enem.inep.gov.br/participante/#!/" target="blank"><img class="logo-menu" src="img/icones/enem_logo.png" alt="logo-enem"></a>
+            <br>
+            <div class="formLabel">
+                <div id="menu" role="menu">
+                    <label><a href="home_enem.html">PÁGINA INICIAL</a></label>
+                    <hr>
+                    <label><a href="instrucoes_enem.html">SIMULADO</a></label>
+                    <hr>
+                    <label><a href="sobre_enem.html">SOBRE</a></label>
+                    <hr>
+                    <label><a href="creditos_enem.html">CRÉDITOS</a></label>
+                </div>
+            </div>
+        </nav>
+    <header>
+            <a href="https://enem.inep.gov.br/participante/#!/" target="blank"><img class="logo" src="img/icones/enem_logo.png" alt="logo-enem"></a>
+        </header>
+        <main>
+            <h1 class="titulos">Estatísticas Enem</h1>
+            <div class="graficoQuestao">
+                <canvas id="chartQ1"></canvas>
+                <canvas id="chartQ2"></canvas>
+                <canvas id="chartQ3"></canvas>
+                <canvas id="chartQ4"></canvas>
+                <canvas id="chartQ5"></canvas>
+                <canvas id="chartQ6"></canvas>
+                <canvas id="chartQ7"></canvas>
+                <canvas id="chartQ8"></canvas>
+                <canvas id="chartQ9"></canvas>
+                <canvas id="chartQ10"></canvas>
+                <canvas id="chartQ11"></canvas>
+                <canvas id="chartQ12"></canvas>
+                <canvas id="chartQ13"></canvas>
+                <canvas id="chartQ14"></canvas>
+                <canvas id="chartQ15"></canvas>
+                <canvas id="chartQ16"></canvas>
+                <canvas id="chartQ17"></canvas>
+                <canvas id="chartQ18"></canvas>
+                <canvas id="chartQ19"></canvas>
+                <canvas id="chartQ20"></canvas>
+                <canvas id="chartQ21"></canvas>
+                <canvas id="chartQ22"></canvas>
+                <canvas id="chartQ23"></canvas>
+                <canvas id="chartQ24"></canvas>
+                <canvas id="chartQ25"></canvas>
+                <canvas id="chartQ26"></canvas>
+                <canvas id="chartQ27"></canvas>
+                <canvas id="chartQ28"></canvas>
+                <canvas id="chartQ29"></canvas>
+                <canvas id="chartQ30"></canvas>
+                <canvas id="chartQ31"></canvas>
+                <canvas id="chartQ32"></canvas>
+                <canvas id="chartQ33"></canvas>
+                <canvas id="chartQ34"></canvas>
+                <canvas id="chartQ35"></canvas>
+                <canvas id="chartQ36"></canvas>
+                <canvas id="chartQ37"></canvas>
+                <canvas id="chartQ38"></canvas>
+                <canvas id="chartQ39"></canvas>
+                <canvas id="chartQ40"></canvas>
+                <canvas id="chartQ41"></canvas>
+                <canvas id="chartQ42"></canvas>
+                <canvas id="chartQ43"></canvas>
+                <canvas id="chartQ44"></canvas>
+                <canvas id="chartQ45"></canvas>
+            </div>
+
+            <div class="graficoIdade">
+                <canvas id="chartIdade"></canvas>
+                <p>Fonte: https://download.inep.gov.br/educacao_basica/enem/downloads/2021/presskit/Press_kit_Enem_2021.pdf</p>
+            </div>
+
+        
+            <div class="box-botao">
+                <a href="resultado_enem.html"><button>Voltar</button></a>
+            </div>
+           <footer>
+            <p class="rodape">Estas informações foram obtidas através das provas do ENEM divulgadas no site do Inep mais informações consultar: <a class="site" href="https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem" target="blank">SITE DO ENEM</a></p>
+            <p class="rodape"><a class="site" href="http://www.fateccarapicuiba.edu.br/" target="blank">FATEC CARAPICUIBA </a><a class="site">|</a> <a class="site" href="http://www.fateccarapicuiba.edu.br/analise-e-desenvolvimento-de-sistemas/" target="blank">Tecnologia Análise e Desenvolvimento Sistemas</a></p>
+        </footer>
+        </main>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@0.4.0/dist/chartjs-plugin-datalabels.min.js"></script>
+        <script src="js/graficos.js"></script>
+    </div> 
+</body>
+</html>

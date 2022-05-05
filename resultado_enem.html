@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="imagem/png" href="img/icones/icone_resultado.png"/>
+    <link rel="stylesheet" type="text/css" href="css/resultado.css">
+    <link rel="stylesheet" href="/css/graficos.css">
+    <title>ENEM - Resultado</title>
+</head>
+<body>
+    <div id="container">
+        <nav>
+            <a href="https://enem.inep.gov.br/participante/#!/" target="blank"><img class="logo-menu" src="img/icones/enem_logo.png" alt="logo-enem"></a>
+            <br>
+            <div class="formLabel">
+                <label class="home"><a href="home_enem.html">PÁGINA INICIAL</a></label>
+                <hr>
+                <label class="prova"><a href="instrucoes_enem.html">SIMULADO</a></label>
+                <hr>
+                <label class="sobre"><a href="sobre_enem.html">SOBRE</a></label>
+                <hr>
+                <label class="credito"><a href="creditos_enem.html">CRÉDITOS</a></label>
+            </div>
+        </nav>
+        <header>
+            <a href="https://enem.inep.gov.br/participante/#!/" target="blank"><img class="logo" src="img/icones/enem_logo.png" alt="logo-enem"></a>
+        </header>
+        <main>
+               <section >
+                    <h1 class="result">Resultado do Simulado:</h1>
+                     <div class="box">
+                        <div class="fieldset">
+                            <p class="resultQuestoes" id="resultado">Questões Respondidas: 0/45</p>
+                            <br>
+                            <p class="resultQuestoes">Quantidade Acertos: 0/45</p>
+                            <br>
+                            <p class="resultQuestoes">Quantidade Erros: 0/45</p>
+
+                            <script>
+                                const contador = localStorage.getItem("contadorCerta");
+                                document.getElementById("resultado").innerText = "Questões Respondidas: " + contador + "/45 ";
+                        
+                            </script>
+                            
+                        </div>
+
+                        <div class="graficoResultado">
+                            <canvas id="chartResult"></canvas>
+                        </div>  
+                        
+                    </div>
+                    <div class="box-botao">
+                        <a href="instrucoes_enem.html"><button>Inicio</button></a>
+                        <a href="graficos.html"><button>Estatística</button></a>
+                    </div>
+                </section>
+
+            
+            <footer>
+                    <br><p class="rodape">Estas informações foram obtidas através das provas do ENEM divulgadas no site do Inep mais informações consultar: <a class="site" href="https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem" target="blank">SITE DO ENEM</a></p><br>
+                    <p class="rodape"><a class="site" href="http://www.fateccarapicuiba.edu.br/" target="blank">FATEC CARAPICUIBA | </a><a class="site" href="http://www.fateccarapicuiba.edu.br/analise-e-desenvolvimento-de-sistemas/" target="blank">Tecnologia Análise e Desenvolvimento Sistemas</a></p>
+            </footer>
+        </main>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.7.1/chart.min.js"></script>
+        <script src="js/graficos.js"></script>
+        <script src="js/contador.js"></script>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Importando o css -->
+    <link rel="stylesheet" href="css/creditos.css">
+    <!-- Ícone da página -->
+    <link rel="icon" type="imagem/png" href="img/icones/icone_creditos.png"/>
+    <!-- Título da página -->
+    <title>Enem - Créditos</title>
+</head>
+<body>
+    <!-- Navegação contendo linkagens para a pág inicial, simulado, sobre e crédito -->
+    <div id="container">
+        <nav>
+            <a href="https://enem.inep.gov.br/participante/#!/" target="blank"><img class="logo-menu" src="img/icones/enem_logo.png" alt="logo-enem"></a>
+            <br>
+            <div class="formLabel">
+                <label class="home"><a href="home_enem.html">PÁGINA INICIAL</a></label>
+                <hr>
+                <label class="prova"><a href="instrucoes_enem.html">SIMULADO</a></label>
+                <hr>
+                <label class="sobre"><a href="sobre_enem.html">SOBRE</a></label>
+                <hr>
+                <label class="credito"><a href="creditos_enem.html">CRÉDITOS</a></label>
+            </div>
+        </nav>
+        <!-- Logo do INEP ENEM -->
+        <header>
+            <a href="https://enem.inep.gov.br/participante/#!/" target="blank"><img class="logo" src="img/icones/enem_logo.png" alt="logo-enem"></a>
+        </header>
+    
+<main>
+    <!-- Informações para a interação dos Cards -->
+    <h1 class="titulo">CRÉDITOS:</h1>
+    <h2>Para obter informações passe o cursor do mouse sobre os Cards Interativos</h2>
+
+<!-- Div responsável por todos os cards -->
+<div class="containerCard">
+    <!-- Div responsável pelo card em específico -->
+    <div class="card">
+        <!-- Div responsável pelo o que vai conter dentro do card -->
+        <div class="content">
+            <!-- Conteúdos dentro do card -->
+            <h2>01</h2>
+            <h3>Simulado ENEM:</h3>
+            <p>Obtido no site do ENEM, todos os direitos autorais reservados ao ENEM - Instituto Nacional de Estudos e Pesquisas Educacionais Anísio Teixeira, para obter mais informações...</p>
+            <!-- Linkagem para outra página -->
+            <a href="https://download.inep.gov.br/enem/provas_e_gabaritos/2021_PV_impresso_D1_CD1.pdf" target="blank">Clique Aqui</a>
+        </div>
+    </div>
+    <!-- Div responsável pelo card em específico -->
+    <div class="card">
+        <!-- Div responsável pelo o que vai conter dentro do card -->
+        <div class="content">
+            <!-- Conteúdos dentro do card -->
+            <h2>02</h2>
+            <h3>Ads:</h3>
+            <p>Site do curso de Análise e Desenvolvimento de Sistemas da Fatec Carapicuíba</p>
+            <!-- Linkagem para outra página -->
+            <a href="http://www.fateccarapicuiba.edu.br/analise-e-desenvolvimento-de-sistemas/" target="blank">Clique Aqui</a>
+        </div>
+    </div>
+    <!-- Div responsável pelo card em específico -->
+    <div class="card">
+        <!-- Div responsável pelo o que vai conter dentro do card -->
+        <div class="content">
+            <!-- Conteúdos dentro do card -->
+            <h2>03</h2>
+            <h3>Autoras:</h3>
+            <p>MELO, Ana</p>
+            <p>CAMPOS, Giovanna</p>
+            <p>SANTOS, Leticia</p>
+            
+        </div>
+    </div>
+    <!-- Div responsável pelo card em específico -->
+    <div class="card">
+        <!-- Div responsável pelo o que vai conter dentro do card -->
+        <div class="content">
+            <!-- Conteúdos dentro do card -->
+            <h2>04</h2>
+            <h3>PMI:</h3>
+            <p>Alunos do 1º semestre cursando a disciplina de PMI - Programação em Microinformática sob orientação da:</p>
+            <br>
+            <p><strong>ORIENTADORA:</strong></p>
+            <P>Profª MSC FELIX, Rita</P>
+            
+        </div>
+    </div>
+</div>
+</main>
+    <!-- Rodapé com as informações e linkagens dos sites -->
+    <footer>
+        <br><p class="rodape">Estas informações foram obtidas através das provas do ENEM divulgadas no site do Inep mais informações consultar: <a class="site" href="https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem" target="blank">SITE DO ENEM</a></p><br>
+        <p class="rodape"><a class="site" href="http://www.fateccarapicuiba.edu.br/" target="blank">FATEC CARAPICUIBA | </a><a class="site" href="http://www.fateccarapicuiba.edu.br/analise-e-desenvolvimento-de-sistemas/" target="blank">Tecnologia Análise e Desenvolvimento Sistemas</a></p>
+    </footer>
+</body>
+<!-- Importando o javascript -->
+<script type="text/javascript" src="js/vanilla-tilt.js"></script>
+<!-- Script para fazer a ação de mover o card -->
+<script>
+    /* Outros tipos de documentação */
+    VanillaTilt.init(document.querySelectorAll(".card"), {
+        max: 25,
+        speed: 400,
+        glare: true,
+        "max-glare": 1,
+    });
+</script>
+</html>

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Importando o css -->
+    <link rel="stylesheet" href="css/sobre.css">
+    <!-- Ícone da página -->
+    <link rel="icon" type="imagem/png" href="img/icones/icone_sobre.png"/>
+    <!-- Título da página -->
+    <title>Enem - Sobre</title>
+</head>
+<body>
+    <!-- Navegação contendo linkagens para a pág inicial, simulado, sobre e crédito -->
+    <div id="container">
+        <nav>
+            <a href="https://enem.inep.gov.br/participante/#!/" target="blank"><img class="logo-menu" src="img/icones/enem_logo.png" alt="logo-enem"></a>
+            <br>
+            <div class="formLabel">
+                <label class="home"><a href="home_enem.html">PÁGINA INICIAL</a></label>
+                <hr>
+                <label class="prova"><a href="instrucoes_enem.html">SIMULADO</a></label>
+                <hr>
+                <label class="sobre"><a href="sobre_enem.html">SOBRE</a></label>
+                <hr>
+                <label class="credito"><a href="creditos_enem.html">CRÉDITOS</a></label>
+            </div>
+        </nav>
+        <!-- Logo do INEP ENEM -->
+        <header>
+            <a href="https://enem.inep.gov.br/participante/#!/" target="blank"><img class="logo" src="img/icones/enem_logo.png" alt="logo-enem"></a>
+        </header>
+    
+<main>
+    <!-- Informações para a interação dos Cards -->
+    <h1 class="titulo">SOBRE:</h1>
+    <h2>Para obter informações passe o cursor do mouse sobre os Cards Interativos</h2>
+
+<!-- Div responsável por todos os cards -->
+<div class="containerCard">
+    <!-- Div responsável pelo card em específico -->
+    <div class="card">
+        <!-- Div responsável pelo o que vai conter dentro do card -->
+        <div class="content">
+            <!-- Conteúdos dentro do card -->
+            <h3>Projeto:</h3>
+            <p>O desenvolvimento e disponibilização deste simulado foi decorrente de um Projeto de desenvolvimento de um SIMULADO ONLINE com base nas provas aplicadas no ENEM e foi implementado pelas alunas do primeiro semestre do curso de Análise e Desenvolvimento de Sistemas da Fatec Carapicuíba.</p>
+        </div>
+    </div>
+    <!-- Div responsável pelo card em específico -->
+    <div class="card">
+        <!-- Div responsável pelo o que vai conter dentro do card -->
+        <div class="content">
+            <!-- Conteúdos dentro do card -->
+            <h3>Aplicação:</h3>
+            <p>Este simulado reproduz as questões da prova de linguagens, códigos e suas tecnologias e redação prova de ciências humanas e suas tecnologias, aplicada no ano de 2021.</p>
+            <a href="https://download.inep.gov.br/enem/provas_e_gabaritos/2021_PV_impresso_D1_CD1.pdf" target="blank">Clique Aqui</a>
+        </div>
+    </div>
+    <!-- Div responsável pelo card em específico -->
+    <div class="card">
+        <!-- Div responsável pelo o que vai conter dentro do card -->
+        <div class="content">
+            <!-- Conteúdos dentro do card -->
+            <h3>Exame:</h3>
+            <p>O Exame Nacional do Ensino Médio (Enem) é a prova mais importante que existe no Brasil para os estudantes que sonham em conseguir uma vaga em instituições públicas de ensino superior. Além disso, com ele também é possível conseguir bolsas e financiamentos em faculdades particulares e ainda ingressar em dezenas de instituições de ensino em Portugal.</p>
+            
+        </div>
+    </div>
+    <!-- Div responsável pelo card em específico -->
+    <div class="card">
+        <!-- Div responsável pelo o que vai conter dentro do card -->
+        <div class="content">
+            <!-- Conteúdos dentro do card -->
+            <h3>Autoras do projeto:</h3>
+            <br>
+            <p>MELO, Ana</p>
+            <p>CAMPOS, Giovanna</p>
+            <p>SANTOS, Leticia</p>
+            
+        </div>
+    </div>
+</div>
+</main>
+    <!-- Rodapé com as informações e linkagens dos sites -->
+    <footer>
+        <br><p class="rodape">Estas informações foram obtidas através das provas do ENEM divulgadas no site do Inep mais informações consultar: <a class="site" href="https://www.gov.br/inep/pt-br/areas-de-atuacao/avaliacao-e-exames-educacionais/enem" target="blank">SITE DO ENEM</a></p><br>
+        <p class="rodape"><a class="site" href="http://www.fateccarapicuiba.edu.br/" target="blank">FATEC CARAPICUIBA | </a><a class="site" href="http://www.fateccarapicuiba.edu.br/analise-e-desenvolvimento-de-sistemas/" target="blank">Tecnologia Análise e Desenvolvimento Sistemas</a></p>
+    </footer>
+</body>
+<!-- Importando o javascript -->
+<script type="text/javascript" src="js/vanilla-tilt.js"></script>
+<!-- Script para fazer a ação de mover o card -->
+<script>
+    /* Outros tipos de documentação */
+    VanillaTilt.init(document.querySelectorAll(".card"), {
+        max: 25,
+        speed: 400,
+        glare: true,
+        "max-glare": 1,
+    });
+</script>
+</html>

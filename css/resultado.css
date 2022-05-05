@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+    * {
+        padding: 0%;
+        margin: 0%;
+    }
+    body {
+        background-color: white;
+        font-family: 'Open Sans', sans-serif;
+    }
+
+    header {
+        background-color: white;
+        height: 100px;
+        padding: 20px;
+        box-sizing: border-box; 
+        margin-left: 19pc;
+    }
+
+    .logo {
+        width: 40%;
+        display: block;
+        margin: 0 auto;
+        margin-top: 1em;
+    }
+
+    .logo-menu {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+        margin-top: 1em;
+        margin-bottom: 4em;
+    }
+
+    .result{
+        color: black;
+        text-align: center;
+    }
+
+    .fieldset {
+        background-color: white;
+        width: 630 px;
+        height: 330px;
+        border: solid #1b3e85 2px;
+        border-radius: 15px;
+        margin-left: 10%;
+        margin-right: 5%;
+    }
+
+     .resultQuestoes {
+        font-size: 20px;
+        margin-left: 25px;
+        padding: 10px;
+        font-weight: bold; 
+    }
+
+    button {
+        border-radius: 25px;
+        margin-top: 100px;
+        margin-left: 45%;
+        padding: 20px;
+        background-color: #1b3e85;
+        font-size: 18px;
+        color: white;
+    }
+
+    button:hover{
+        background-color: #1b3e73;
+    }
+
+    nav {
+        background-color: #006699;
+        position: fixed;
+        height: 100vh;
+        width: 20%;
+        z-index: 1000;
+        float: left;
+    }
+
+    main {
+        background-color: #ccddff;
+        width: 80%;
+        height: 110vh;
+        margin-top: 2em;
+        float: right;
+    }
+
+    h1 {
+        color: white;
+        margin-bottom: 40px;
+        font-size: xx-large;
+        padding: 10px;
+    }
+    
+
+    .box{
+        display: flex;
+        align-items: center;
+        margin-left: 15%;
+    }
+    .box-botao{
+        display: flex;
+        flex-wrap: wrap;
+        margin-left: 40%;
+    }
+
+    .formLabel :hover{
+        color: black;
+        font-weight: bold;
+    }
+
+    label a{
+        text-decoration: none;
+        color: white;
+        padding: 10px;
+    }
+
+    hr{
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    
+    footer {
+        width: 100%;
+        background-color: #006699;
+        text-align: center;
+        padding-bottom: 2.7em;
+        margin-top: 29.3vh;    
+    }
+
+    .rodape {
+        color: white;
+        font-size: 1em;
+        text-align: center;
+    }
+
+    .site {
+        color: #ffcc00;
+        font-weight: bold;
+        text-decoration: none;
+    }
+
+    .site:hover {
+        color: orange;
+    }
+    
